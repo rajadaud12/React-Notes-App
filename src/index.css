@@ -295,3 +295,19 @@ button:focus {
   background-color: transparent; /* Keep background transparent on focus */
   border-bottom: 1px solid white; /* Optional: Add a white border for focus indication */
 }
+
+/* Override the dark theme and enforce light mode styles */
+.md-editor {
+  --md-editor-background: #ffffff !important;
+  --md-editor-text-color: #000000 !important;
+  --md-editor-preview-background: #fafafa !important;
+  --md-editor-border-color: #dcdcdc !important;
+  --md-editor-toolbar-background: #f5f5f5 !important;
+  --md-editor-toolbar-border-color: #e0e0e0 !important;
+}
+
+/* Optional: Override preview styles to be light */
+.md-editor-preview {
+  background-color: #f5f5f5 !important;
+  color: #000000 !important;
+}
